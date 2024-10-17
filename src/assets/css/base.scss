@@ -1,0 +1,17 @@
+$main-bg-color: #fcfcfd;
+$table-th-bg-color: #f2f4f7;
+$label-bg-color: #f2f4f7;
+$label-border-color: #a5a5a5;
+$popover-background-color: #ffffff;
+.v-main {
+  background-color: $main-bg-color;
+  &.login {
+    background-color: #053d44;
+  }
+}
+table th {
+  background-color: $table-th-bg-color;
+}
+table .selected {
+  background-color: $table-th-bg-color;
+}
