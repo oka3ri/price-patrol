@@ -1,0 +1,11 @@
+// NOTE Vuetify Variables Override
+
+@use 'vuetify/settings' with (
+	$font-size-root: 14px,
+	$field-font-size: 14px,
+	$table-font-size: 14px,
+	// $table-th-color: '#EEEEEE',
+	// $table-border: 1px solid red,
+	// $table-header-font-weight: bold,
+	// $table-font-size: 14px
+);
