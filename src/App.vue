@@ -1,21 +1,23 @@
 <template lang="pug">
 v-app
-	v-main
+	v-main.main-container
 		router-view
+	base-footer
 </template>
 <script>
+import BaseFooter from '@/components/layouts/Footer.vue'
 export default {
-  components: {},
-  data() {
-    return {};
-  },
-  computed: {},
-  methods: {},
-  created() {},
-  mounted() {
-    window.VueRoot = this;
-  },
-};
+	components: { BaseFooter },
+	data() {
+		return {}
+	},
+	computed: {},
+	methods: {},
+	created() {},
+	mounted() {
+		window.VueRoot = this
+	},
+}
 </script>
 
 <style lang="scss"></style>

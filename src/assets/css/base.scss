@@ -3,15 +3,86 @@ $table-th-bg-color: #f2f4f7;
 $label-bg-color: #f2f4f7;
 $label-border-color: #a5a5a5;
 $popover-background-color: #ffffff;
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-Light.woff') format('woff');
+	font-weight: 300;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-Medium.woff') format('woff');
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-Bold.woff') format('woff');
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url('@/assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-display: swap;
+}
+
+:root {
+	/* color */
+	--black0: #282823;
+	--black1: #2a2829;
+	--black2: #595c56;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	// overflow-x: hidden;
+	background: #fff;
+	font-family: 'Pretendard', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 400;
+	color: var(--black0);
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
+strong {
+	font-weight: 700;
+	line-height: inherit;
+}
+
 .v-main {
-  background-color: $main-bg-color;
-  &.login {
-    background-color: #053d44;
-  }
+	background-color: $main-bg-color;
 }
 table th {
-  background-color: $table-th-bg-color;
+	background-color: $table-th-bg-color;
 }
 table .selected {
-  background-color: $table-th-bg-color;
+	background-color: $table-th-bg-color;
 }
