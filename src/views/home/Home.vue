@@ -32,34 +32,29 @@ v-container(fluid)
 								v-rating(:model-value="3.5" length="5" active-color="yellow-accent-4" color="yellow-accent-4" :size="18" half-increments readonly)
 								span (1320)
 </template>
+<script setup>
+import { ref, onMounted } from 'vue'
 
-<script>
-export default {
-	data() {
-		return {
-			req: {
-				category: null,
-			},
-			categoryList: [
-				{ id: 1, title: '전체' },
-				{ id: 2, title: '가전/디지털' },
-				{ id: 3, title: '생활용품' },
-				{ id: 4, title: '완구/취미' },
-				{ id: 5, title: '식품' },
-				{ id: 6, title: '건강/운동' },
-				{ id: 7, title: '생활용품' },
-				{ id: 8, title: '생활용품' },
-				{ id: 9, title: '생활용품' },
-				{ id: 10, title: '생활용품' },
-				{ id: 11, title: '생활용품' },
-			],
-		}
-	},
-	methods: {},
-	created() {},
-	mounted() {
-		this.req.category = this.categoryList[0].id
-	},
-}
+const req = ref({
+	category: null,
+})
+
+const categoryList = ref([
+	{ id: 1, title: '전체' },
+	{ id: 2, title: '가전/디지털' },
+	{ id: 3, title: '생활용품' },
+	{ id: 4, title: '완구/취미' },
+	{ id: 5, title: '식품' },
+	{ id: 6, title: '건강/운동' },
+	{ id: 7, title: '생활용품' },
+	{ id: 8, title: '생활용품' },
+	{ id: 9, title: '생활용품' },
+	{ id: 10, title: '생활용품' },
+	{ id: 11, title: '생활용품' },
+])
+
+onMounted(() => {
+	req.value.category = categoryList.value[0].id
+})
 </script>
 <style lang="scss"></style>

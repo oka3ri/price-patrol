@@ -7,20 +7,9 @@ v-footer.d-flex.flex-column.pa-0(height="100")
 		.footer-copy
 			strong Copyright © 2024. Terry&doeezy All rights reserved.
 </template>
-
-<script>
-export default {
-	data() {
-		return {}
-	},
-	computed: {},
-	methods: {
-		openLink() {
-			window.open('https://github.com/oka3ri/price-patrol', '_blank')
-		},
-	},
-	created() {},
-	mounted() {},
+<script setup>
+const openLink = () => {
+	window.open('https://github.com/oka3ri/price-patrol', '_blank')
 }
 </script>
 
