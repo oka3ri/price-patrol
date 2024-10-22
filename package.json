@@ -15,7 +15,7 @@
 		"axios": "^1.6.2",
 		"dayjs": "^1.11.10",
 		"jwt-decode": "^4.0.0",
-		"prettier": "^3.1.0",
+		"prettier": "^2.8.8",
 		"pug": "^3.0.2",
 		"roboto-fontface": "*",
 		"sass": "^1.69.5",
